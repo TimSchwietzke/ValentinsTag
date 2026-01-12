@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
 * {
-    font-family: 'Romantic', sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 body {
@@ -7,22 +8,54 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    cursor: url('src/cursor/HelloKittyNormalSelect.cur') 0 0, auto;
 
-    background-image: url("pinkheartwhitebg.png");
+    background-image: url("src/img/pinkheartwhitebg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% {
+        transform: scale(1.05);
+    }
+    100% { transform: scale(1); }
+}
+
+#delal {
+    background-color: #D66F8B;
+    color: white;
+    text-align: center;
+    animation: heartbeat 2s infinite ease-in-out;
+
+    border: none;
+
+    padding: 15px 40px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    box-shadow:
+            inset 0 0 0 5px #D66F8B,
+            inset 0 0 0 8px white,
+            0 5px 15px rgba(214, 111, 139, 0.6);
+}
+
 .card {
     padding: 20px;
     background: rgba(255, 255, 255, 0.95);
-    color: #d63384;
+    color: #D66F8B;
+
     border-radius: 25px;
-    border: 5px solid #d63384;
+    border: 5px solid #D66F8B;
+
+    box-shadow: 0 10px 30px rgba(214, 111, 139, 0.5);
 }
 
 .buttons {
@@ -31,13 +64,20 @@ body {
 }
 
 #yesBtn, #noBtn, #mayBtn {
-    background-color: pink;
-    width: 150px;
+    background-color: #D66F8B;
 
+    width: 150px;
+    font-size: 17px;
+    font-weight: bold;
+
+    box-sizing: border-box;
     border-radius: 10px;
-    border: none;
+    border: white 3px dashed;
+    color: white;
 
     padding: 10px;
+
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 #yesBtn {
@@ -46,4 +86,62 @@ body {
 
 #noBtn {
 
+}
+
+#yesBtn:hover, #mayBtn:hover, #noBtn:hover {
+    background-color: #d63384;
+
+    transform: scale(1.05);
+
+}
+
+#yesBtn:active, #mayBtn:active, #noBtn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
+#success-container, #fail-container {
+    display: none;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.95);
+    color: #D66F8B;
+
+    border-radius: 25px;
+    border: 5px solid #D66F8B;
+
+    padding: 10px;
+
+    box-shadow: 0 10px 30px rgba(214, 111, 139, 0.5);
+
+}
+
+#success-image, #fail-image {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+
+#custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+
+    background-image: url('src/cursor/HelloKittyLinkSelect.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+}
+
+button:hover,
+#success-image:hover,
+#fail-image:hover {
+    cursor: none; /* System-Cursor ausschalten, damit wir nur unser GIF sehen */
 }

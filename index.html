@@ -6,17 +6,28 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Cute Font' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Romantic Font' rel='stylesheet'>
 
     <script src="script.js"></script>
 </head>
 <body>
+<h1 id="delal">Hallo Delal :)</h1>
 <div class="card" id="main-content">
     <h1>Willst du mein Valentine sein? 🌹</h1>
     <div class="buttons">
         <button id="yesBtn" onclick="acceptLove()">Ja</button>
         <button id="noBtn" onmouseover="moveButton()" onclick="moveButton()">Nein</button>
-        <button id="mayBtn" onmouseover="changeYourMindHover()" onmouseleave="changeYourMindLeave()" onclick="acceptLove()">Vielleicht</button>
+        <button id="mayBtn" onmouseover="changeYourMindHover()" onmouseleave="changeYourMindLeave()" onclick="acceptLove('maybe')">Vielleicht</button>
     </div>
 </div>
+<div id="success-container">
+    <img src="src/img/yippee-cheer.gif" alt="yipee" id="success-image" onclick="backToTheRoots()">
+    <h1 id="success-message">Ich freue mich :) <3</h1>
+</div>
+<div id="fail-container">
+    <img src="src/img/sad-cat-cat.gif" alt="hmm" id="fail-image" onclick="backToTheRoots()">
+    <h1 id="fail-message">Wieso gehst du so oft auf nein? ＞﹏＜</h1>
+</div>
+<div id="custom-cursor"></div>
 </body>
+</html>
