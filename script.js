@@ -87,6 +87,9 @@ function backToTheRoots() {
     document.getElementById('success-container').style.display = 'none';
     document.getElementById('fail-container').style.display = 'none';
 
+    const successText = document.getElementById('success-message');
+    successText.innerText = "Ich freue mich :) <3";
+
     document.getElementById('delal').style.display = 'block';
     document.getElementById('main-content').style.display = 'block';
 
@@ -100,7 +103,6 @@ function backToTheRoots() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const customCursor = document.getElementById('custom-cursor');
-    // Alle Elemente, bei denen der GIF-Cursor erscheinen soll
     const targets = document.querySelectorAll('button, #success-image, #fail-image');
 
     // 1. Das Div bewegt sich immer mit der Maus mit (auch wenn unsichtbar)
