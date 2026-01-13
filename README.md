@@ -1,19 +1,18 @@
 ## 🌹 Valentinstag
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+Perfekt um diese eine Person auf lustige (und nerdige) Weise zu fragen ob man den Valentinstag zusammen verbringen möchte (●'◡'●)
 
-> *"Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."*
+> *"Hier könnte Ihr witziger Valentinstags Spruch stehen!"*
 
 ## ✨ Features
 
-* **Interaktiver "Nein"-Button:** Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-* **Pixel-Art Ästhetik:** Sed diam nonumy eirmod tempor invidunt.
-* **Responsive Design:** At vero eos et accusam et justo duo dolores (funktioniert auf Handy & PC).
-* **WhatsApp Integration:** Stet clita kasd gubergren.
+* **Interaktiver "Nein"-Button:** Weicht dem Maus-Cursor aus. Bei wiederholtem Versuch darüber zu hovern kommt eine Überraschung :P
+* **Pixel-Art Ästhetik:** Perfekt für jeden 8-Bit Enthusiasten und Hello Kitty Liebhaber.
+* **Custom Cursor** Um die Ästhetik zu perfektionieren gibt es verschiedene Cursor im Hello Kitty Style
 
 ## 🛠️ Technologien
 
-Dieses Projekt ist bewusst simpel gehalten ("Vanilla Stack"), um maximale Performance und einfaches Hosting zu gewährleisten.
+Dieses Projekt ist bewusst simpel gehalten ("Vanilla Stack"), um einfaches Hosting zu gewährleisten.
 
 * **HTML5:** Struktur der Seite.
 * **CSS3:** Styling, Flexbox und Animationen.
@@ -33,11 +32,9 @@ Da es sich um eine statische Seite handelt, ist keine komplexe Installation nöt
 ## 🎨 Credits & Assets
 
 * **Pixel Art Background:** Generiert mit AI (oder Lorem Ipsum Quelle).
-* **Font:** Arial / Sans-Serif (Systemschrift).
-* **Inspiration:** Lorem ipsum dolor sit amet.
-
+* **Cursor:** Von <a href="https://www.rw-designer.com/user/48261">15pets+</a>
 ---
 
 <div align="center">
-  <p>Erstellt mit ❤️ für den 14. Februar.</p>
+  <p>Erstellt mit ❤️, für den 14. Februar.</p>
 </div>
